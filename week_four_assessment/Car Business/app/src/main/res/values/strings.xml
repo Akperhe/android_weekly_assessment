@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Car Business</string>
+    <string name="repair">Repair</string>
+    <string name="accessories">Accessories</string>
+    <string name="car_rental">Car Rental</string>
+    <string name="buy_amp_sell"><![CDATA[Buy & Sell]]></string>
+    <string name="you_need">You need!</string>
+    <string name="choose_any_services">Choose any Services</string>
+    <string name="services">Services</string>
+</resources>

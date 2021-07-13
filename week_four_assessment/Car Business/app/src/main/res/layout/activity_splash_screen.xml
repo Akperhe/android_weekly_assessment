@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:id="@+id/imageHome"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_home" />
+
+    <TextView
+        android:id="@+id/splCarServices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageHome"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/acme_regular"
+        android:text="Car Services"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splCarServices"
+        android:layout_marginTop="20dp"
+        android:indeterminateTint="@color/black" />
+
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/splWebAddress"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#009688"
+        android:text="Continue" />
+
+    <TextView
+        android:id="@+id/splWebAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="www.deltastateinnovationhub.com"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
