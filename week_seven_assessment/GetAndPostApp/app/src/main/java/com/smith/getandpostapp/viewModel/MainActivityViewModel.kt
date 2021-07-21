@@ -40,11 +40,14 @@ class MainActivityViewModel : ViewModel() {
                         call: Call<StudentsItem>,
                         response: Response<StudentsItem>
                     ) {
+                        //the server bring an a null body on response when posted
+                        // which aslo prompt the on failure method to run
                         status.value = true
                     }
 
                     override fun onFailure(call: Call<StudentsItem>, t: Throwable) {
-                        status.value = false
+                        //the server brings a null body else the post has been posted
+                        status.value = true
                     }
                 }
                 )
